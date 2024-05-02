@@ -1,0 +1,10 @@
+ git checkout -b withAxiosAndJSONDataFile
+
+
+  496  git branch
+  497  git checkout master
+  498  git merge withAxiosAndJSONDataFile
+  500  git branch
+  501  git remote add origin xxxxxxxxxx.1and1-data.host:~/rusezGit/express1
+  502  git push --set-upstream origin master
+  505  git remote -v

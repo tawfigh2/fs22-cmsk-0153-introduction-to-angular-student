@@ -1,0 +1,25 @@
+
+1- Useless: ReactDOM.render and document.getElementById('root')
+
+ReactDOM.render(
+  // Essayez de changer ça vers isLoggedIn={true} :
+  <Greeting isLoggedIn={false} />,  document.getElementById('root'));
+
+
+2- Useless: this.setState and this.handleLoginClick = this.handleLoginClick.bind(this);
+
+class LoginControl extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleLoginClick = this.handleLoginClick.bind(this);
+    this.handleLogoutClick = this.handleLogoutClick.bind(this);
+    this.state = {isLoggedIn: false};
+  }
+
+  handleLoginClick() {
+    this.setState({isLoggedIn: true});
+  }
+
+  handleLogoutClick() {
+    this.setState({isLoggedIn: false});
+  }

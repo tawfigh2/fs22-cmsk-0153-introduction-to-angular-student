@@ -1,0 +1,8 @@
+node_modules
+.DS_Store
+.firebase
+dist
+dev-dist
+dist-ssr
+*.local
+*.tsMANUAL_INCLUDE.ts
